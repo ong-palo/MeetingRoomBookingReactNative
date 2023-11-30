@@ -1,14 +1,14 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
-import LoginScreen from './src/screens/LoginScreen/LoginScreen';
-import Welcome from './src/screens/WelcomeScreen/WelcomeScreen';
+import LoginScreen from './screens/LoginScreen/LoginScreen';
+import Welcome from './screens/WelcomeScreen/WelcomeScreen';
 import {Provider} from 'react-redux';
-import {store} from './src/store/store';
-import MyBooking from './src/screens/MyBookingScreen/MyBooking';
-import Header from './src/components/Header';
-import NewBooking from './src/screens/NewBookingScreen/NewBooking';
-import SelectRoom from './src/screens/SelectRoomScreen/SelectRoom';
+import {store} from './store/store';
+import MyBooking from './screens/MyBookingScreen/MyBooking';
+import Header from './components/Header';
+import NewBooking from './screens/NewBookingScreen/NewBooking';
+import SelectRoom from './screens/SelectRoomScreen/SelectRoom';
 
 const Stack = createStackNavigator();
 
