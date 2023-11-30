@@ -15,7 +15,7 @@ function Welcome({route, navigation}) {
   }
 
   return (
-    <View style={styles.rootContainer}>
+    <View style={styles.rootContainer} testID="landing_page">
       <ImageBackground
         source={require('../../assets/images/meeting_room.jpg')}
         resizeMode={'cover'}
@@ -44,12 +44,14 @@ function Welcome({route, navigation}) {
                 fill={true}
                 onPress={navigateLogin}
                 type={'primary'}
+                testID="login"
               />
               <PrimaryButton
                 text={'Sign Up'}
                 fill={false}
                 onPress={navigateLogin}
                 type={'primary'}
+                testID="sign_up"
               />
             </View>
           </View>

@@ -1,7 +1,8 @@
+import React from 'react-native';
 import {Pressable, StyleSheet, Text, View} from 'react-native';
 import {Colors} from '../utils/colors';
 
-function PrimaryButton({text, fill, onPress, type}) {
+function PrimaryButton({text, fill, onPress, type, testID}) {
   let mainColor;
 
   if (type === 'primary') {
@@ -34,7 +35,7 @@ function PrimaryButton({text, fill, onPress, type}) {
   const textStyle = [styles.text, fill ? fillStyleText : outlineStyleText];
 
   return (
-    <View style={containerStyle}>
+    <View style={containerStyle} testID={testID}>
       <Pressable
         onPress={onPress}
         style={({pressed}) =>
