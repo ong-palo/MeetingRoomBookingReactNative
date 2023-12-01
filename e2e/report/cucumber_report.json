@@ -1,0 +1,79 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "welcome-page;as,-a-user-i-have-launched-the-meeting-room-booking-app",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "As, a user I have launched the meeting room booking app",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 11679217916
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "I am in \"landing_page\" page",
+            "match": {
+              "location": "e2e/features/step_definitions/given.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 193364583
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 4,
+            "name": "I should see \"login\" button",
+            "match": {
+              "location": "e2e/features/step_definitions/then.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18915791
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I should see \"sign_up\" button",
+            "match": {
+              "location": "e2e/features/step_definitions/then.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19624958
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 638582
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "welcome-page",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Welcome page",
+    "tags": [],
+    "uri": "e2e/features/feature_files/WelcomePage.feature"
+  }
+]
