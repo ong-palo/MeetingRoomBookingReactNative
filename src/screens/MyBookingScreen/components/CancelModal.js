@@ -3,7 +3,7 @@ import {StyleSheet, Text, View} from 'react-native';
 import Modal from 'react-native-modal';
 import {useDispatch, useSelector} from 'react-redux';
 import {setCancelModalVisibility} from '../../../store/slices/myBookingSlice';
-import PrimaryButton from '../../../components/PrimaryButton';
+import PrimaryButton from '../../../components/PrimaryButton/PrimaryButton';
 
 function CancelModal() {
   // const myBookingContext = useContext(MyBookingContext);

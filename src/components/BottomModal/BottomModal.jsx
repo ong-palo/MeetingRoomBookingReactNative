@@ -1,6 +1,8 @@
 import Modal from 'react-native-modal';
-import {StyleSheet, View} from 'react-native';
-import PrimaryButton from './PrimaryButton';
+import {View} from 'react-native';
+import PrimaryButton from '../PrimaryButton/PrimaryButton';
+
+import styles from './styles';
 
 function BottomModal({visible, setVisible, onPress, children}) {
   return (
@@ -23,23 +25,5 @@ function BottomModal({visible, setVisible, onPress, children}) {
     </Modal>
   );
 }
-
-const styles = StyleSheet.create({
-  root: {
-    margin: 0,
-    justifyContent: 'flex-end',
-  },
-  innerContainer: {
-    backgroundColor: 'white',
-    borderTopLeftRadius: 10,
-    borderTopRightRadius: 10,
-    // height: 200,
-    justifyContent: 'space-between',
-    padding: 20,
-  },
-  footer: {
-    marginBottom: 10,
-  },
-});
 
 export default BottomModal;

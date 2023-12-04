@@ -1,6 +1,8 @@
 import React from 'react-native';
-import {Pressable, StyleSheet, Text, View} from 'react-native';
-import {Colors} from '../utils/colors';
+import {Pressable, Text, View} from 'react-native';
+import {Colors} from '../../utils/colors';
+
+import styles from './styles';
 
 function PrimaryButton({text, fill, onPress, type, testID}) {
   let mainColor;
@@ -46,27 +48,5 @@ function PrimaryButton({text, fill, onPress, type, testID}) {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  buttonOuterContainer: {
-    marginVertical: 5,
-    height: 75,
-    borderRadius: 10,
-    borderWidth: 1,
-    // backgroundColor: '#5CC99B',
-    // borderColor: '#5CC99B',
-    justifyContent: 'center',
-  },
-  pressed: {
-    opacity: 0.65,
-  },
-  text: {
-    color: 'white',
-    textAlign: 'center',
-    fontWeight: '700',
-    fontSize: 16,
-    lineHeight: 24,
-  },
-});
 
 export default PrimaryButton;

@@ -1,9 +1,9 @@
 import React from 'react-native';
 import {Alert, StyleSheet, Text, View} from 'react-native';
-import CustomInput from '../../components/CustomInput';
-import PrimaryButton from '../../components/PrimaryButton';
+import CustomInput from '../../components/CustomInput/CustomInput';
+import PrimaryButton from '../../components/PrimaryButton/PrimaryButton';
 import {useState} from 'react';
-import BottomModal from '../../components/BottomModal';
+import BottomModal from '../../components/BottomModal/BottomModal';
 import NumberOfGuests from './components/NumberOfGuests';
 import {Calendar} from 'react-native-calendars';
 import RNDateTimePicker from '@react-native-community/datetimepicker';

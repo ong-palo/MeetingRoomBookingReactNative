@@ -6,7 +6,7 @@ import Welcome from './screens/WelcomeScreen/WelcomeScreen';
 import {Provider} from 'react-redux';
 import {store} from './store/store';
 import MyBooking from './screens/MyBookingScreen/MyBooking';
-import Header from './components/Header';
+import Header from './components/Header/Header';
 import NewBooking from './screens/NewBookingScreen/NewBooking';
 import SelectRoom from './screens/SelectRoomScreen/SelectRoom';
 

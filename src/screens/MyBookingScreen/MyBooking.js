@@ -4,7 +4,7 @@ import BookingDetailList from './components/BookingDetailList';
 import CancelModal from './components/CancelModal';
 import {useDispatch, useSelector} from 'react-redux';
 import {setCancelModalVisibility} from '../../store/slices/myBookingSlice';
-import PrimaryButton from '../../components/PrimaryButton';
+import PrimaryButton from '../../components/PrimaryButton/PrimaryButton';
 
 import styles from './styles';
 

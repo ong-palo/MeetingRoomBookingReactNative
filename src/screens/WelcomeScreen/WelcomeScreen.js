@@ -1,6 +1,6 @@
 import React from 'react-native';
 import {Image, ImageBackground, Text, View} from 'react-native';
-import PrimaryButton from '../../components/PrimaryButton';
+import PrimaryButton from '../../components/PrimaryButton/PrimaryButton';
 
 import styles from './styles';
 
