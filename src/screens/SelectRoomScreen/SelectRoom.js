@@ -1,11 +1,13 @@
 import React from 'react-native';
-import {Text, View, StyleSheet, FlatList} from 'react-native';
-import {roomsApi, useGetRoomsQuery} from '../../store/slices/api/roomsApi';
+import {Text, View, FlatList} from 'react-native';
+import {useGetRoomsQuery} from '../../store/slices/api/roomsApi';
 import {useEffect} from 'react';
 import RoomList from './components/RoomList';
 import {useDispatch, useSelector} from 'react-redux';
 import {setRooms} from '../../store/slices/roomsSlice';
 import PickedInfo from './components/PickedInfo';
+
+import styles from './styles';
 
 function SelectRoom() {
   const {data, error, isLoading} = useGetRoomsQuery();
@@ -45,30 +47,5 @@ function SelectRoom() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  root: {
-    flex: 1,
-  },
-  pickerContainer: {
-    flexDirection: 'row',
-    marginTop: 20,
-    marginHorizontal: 20,
-  },
-  innerPickerContainer: {
-    flex: 1,
-    justifyContent: 'flex-start',
-    // paddingRight: 10
-  },
-  roomListContainer: {
-    flex: 1,
-    padding: 20,
-  },
-  title: {
-    fontSize: 16,
-    fontWeight: '700',
-    lineHeight: 24,
-  },
-});
 
 export default SelectRoom;

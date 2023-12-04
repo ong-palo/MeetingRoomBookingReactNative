@@ -6,6 +6,8 @@ import {useDispatch, useSelector} from 'react-redux';
 import {setCancelModalVisibility} from '../../store/slices/myBookingSlice';
 import PrimaryButton from '../../components/PrimaryButton';
 
+import styles from './styles';
+
 function MyBooking({route, navigation}) {
   // const myBookingContext = useContext(MyBookingContext);
   const myBookings = useSelector(state => state.myBookings.myBookings);
@@ -60,29 +62,5 @@ function MyBooking({route, navigation}) {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  rootContainer: {
-    flex: 1,
-    // padding: 20,
-    // margin: 20
-  },
-  container: {
-    paddingBottom: 20,
-    paddingTop: 20,
-    paddingHorizontal: 20,
-  },
-  sectionTitle: {
-    fontWeight: '700',
-    fontSize: 16,
-    lineHeight: 24,
-  },
-  footer: {
-    height: 120,
-    justifyContent: 'center',
-    paddingHorizontal: 20,
-    paddingBottom: 20,
-  },
-});
 
 export default MyBooking;
